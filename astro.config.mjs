@@ -7,7 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://adiggstion.github.io',
   base: '/TheSchneiderHair/',
-  outDir: './docs',
+  outDir: './build',
   vite: {
     plugins: [tailwindcss()]
   }

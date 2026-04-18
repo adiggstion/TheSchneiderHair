@@ -1,11 +1,29 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+//Import Layouts for Project from types.ts
+import {
+  Layout,
+  HeaderLayout,
+  HeroLayout,
+  AuthorityLayout,
+  AboutLayout,
+  ServicesLayout,
+  GalleryLayout,
+  ExperienceLayout,
+  LocationLayout,
+  FooterLayout
+} from '../types';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import {SectionTypes} from '../types';
 ---
 
 <Layout>
-	<Welcome />
+	<HeaderLayout 		HeightRatio=0.2 SectionType= {SectionTypes.header} 		/>
+	<HeroLayout 		HeightRatio=0.1 SectionType= {SectionTypes.hero}			/>
+	<AuthorityLayout 	HeightRatio=0.1 SectionType= {SectionTypes.authority}		/>
+	<AboutLayout 		HeightRatio=0.1 SectionType= {SectionTypes.about}			/>
+	<ServicesLayout 	HeightRatio=0.1 SectionType= {SectionTypes.services}		/>
+	<GalleryLayout 		HeightRatio=0.1 SectionType= {SectionTypes.gallery}		/>
+	<ExperienceLayout 	HeightRatio=0.1 SectionType= {SectionTypes.experience}	/>
+	<LocationLayout 	HeightRatio=0.1 SectionType= {SectionTypes.location}		/>
+	<FooterLayout 		HeightRatio=0.1 SectionType= {SectionTypes.footer}		/>
 </Layout>

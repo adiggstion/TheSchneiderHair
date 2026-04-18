@@ -1,0 +1,19 @@
+---
+import SectionContainer from '../components/SectionContainer.astro';
+import '../styles/global.css' ;
+
+import type { SectionProps } from '../types';
+const {
+  CustomStyle = '',
+  id = '',
+  HeightRatio = 0.1,
+  SectionType = 'section-container',
+} = Astro.props as SectionProps;
+
+const minHeight = `${HeightRatio * 100}vh`;
+
+---
+
+<SectionContainer SectionType={SectionType} CustomStyle={CustomStyle} minHeight={minHeight} >
+
+</SectionContainer>

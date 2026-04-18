@@ -1,1 +1,95 @@
 @import "tailwindcss";
+
+/* ===== SOURCE OF TRUTH ===== */
+:root {
+  /* Raw palette */
+  --beige-50:  #faf6f3;
+  --beige-100: #f5ece6;
+  --beige-200: #e5cab5;
+  --beige-300: #d4ac89;
+  --beige-400: #b59274;
+  --beige-500: #94775e;
+  --beige-600: #775f4a;
+  --beige-700: #584536;
+  --beige-800: #3e3024;
+  --beige-900: #231a12;
+  --beige-950: #16100a;
+}
+
+/* ===== TAILWIND THEME ===== */
+@theme {
+  /* Raw palette → utilities like bg-beige-500 */
+  --color-beige-50: var(--beige-50);
+  --color-beige-100: var(--beige-100);
+  --color-beige-200: var(--beige-200);
+  --color-beige-300: var(--beige-300);
+  --color-beige-400: var(--beige-400);
+  --color-beige-500: var(--beige-500);
+  --color-beige-600: var(--beige-600);
+  --color-beige-700: var(--beige-700);
+  --color-beige-800: var(--beige-800);
+  --color-beige-900: var(--beige-900);
+  --color-beige-950: var(--beige-950);
+
+  /* Semantic tokens */
+  --color-canvas: var(--beige-50);   /* page background */
+  --color-surface: var(--beige-100); /* cards */
+  --color-muted: var(--beige-200);   /* sections */
+
+  --color-brand: var(--beige-400);
+  --color-brand-soft: var(--beige-200);
+  --color-brand-strong: var(--beige-600);
+
+  --color-text: var(--beige-800);
+  --color-text-muted: var(--beige-500);
+  --color-text-on-brand: #ffffff;
+
+  --color-border: var(--beige-200);
+  --color-border-strong: var(--beige-400);
+}
+
+/* ===== Usage ===== */
+.section-container {
+  @apply bg-transparent;
+}
+
+.page-container {
+  @apply bg-transparent;
+}
+
+/* ===== SECTION TYPES ===== */
+.section-header {
+  @apply bg-canvas;
+}
+
+.section-hero {
+  @apply bg-canvas;
+}
+
+.section-authority {
+  @apply bg-canvas;
+}
+
+.section-about {
+  @apply bg-canvas;
+}
+
+.section-services {
+  @apply bg-canvas;
+}
+
+.section-gallery {
+  @apply bg-canvas;
+}
+
+.section-experience {
+  @apply bg-canvas;
+}
+
+.section-location {
+  @apply bg-canvas;
+}
+
+.section-footer {
+  @apply bg-canvas;
+}

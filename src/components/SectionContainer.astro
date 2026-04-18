@@ -1,0 +1,25 @@
+---
+import type { SectionProps } from '../types';
+
+const {
+  CustomStyle = '',
+  id = '',
+  HeightRatio = 0.1,
+  SectionType = 'section-container',
+  minHeight= '' 
+} = Astro.props as SectionProps;
+
+const SectionClass =  CustomStyle || SectionType;
+
+
+---
+
+<section
+  id={id}
+  class={`w-full ${SectionClass} ${CustomStyle}`.trim()}
+  style={minHeight ? `min-height: ${minHeight};` : undefined}
+>
+  <div class="mx-auto max-w-7xl px-6">
+    <slot />
+  </div>
+</section>

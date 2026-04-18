@@ -1,6 +1,9 @@
 ---
 import SectionContainer from '../components/SectionContainer.astro';
+import AboutContent from '../content/AboutContent.astro';
 import '../styles/global.css' ;
+
+
 
 import type { SectionProps } from '../types';
 const {
@@ -15,5 +18,5 @@ const minHeight = `${HeightRatio * 100}vh`;
 ---
 
 <SectionContainer SectionType={SectionType} CustomStyle={CustomStyle} minHeight={minHeight} >
-
+  <AboutContent />  
 </SectionContainer>

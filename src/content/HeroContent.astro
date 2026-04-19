@@ -1,1 +1,116 @@
-<div>Hero</div>
+
+
+<section class="hero" id="top">
+
+  <div class="hero-overlay"></div>
+  <div class="hero-copy" data-reveal>
+    <p class="eyebrow" data-i18n="heroEyebrow">Blonde specialist · Berlin Friedrichshain</p>
+    <h1 data-i18n="heroHeadline">Berlin Blonde, Done Right.</h1>
+    <p class="intro" data-i18n="heroIntro">Soft. Seamless. Healthy. High-end blonding & balayage by Dennis Schneider.</p>
+    <div class="hero-actions">
+      <a class="button button-primary booking-trigger" href="https://theschneiderhair.salonized.com/" target="_blank" rel="noopener" data-i18n="heroButtonBook">Book Appointment</a>
+      <a class="button button-secondary" href="https://www.amazon.de/shop/theschneider.hair?ref_=cm_sw_r_apin_aipsfshop_1XKG4HECKB20E70B9HQ3&language=en-US" target="_blank" rel="noopener">Recommended Products</a>
+      <a class="button button-secondary" href="https://payhip.com/theschneiderhair" target="_blank" rel="noopener">Purchase E-Book</a>
+      <a class="button button-secondary" href="#portfolio" data-i18n="heroButtonPortfolio">Portfolio</a>
+    </div>
+  </div>
+</section>
+
+
+<style>
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: start;
+  justify-content: start;
+  padding: clamp(4rem, 10vh, 8rem) clamp(4rem, 0vw, 4rem) 6rem;
+  background:
+    linear-gradient(180deg, rgba(247, 243, 238, 0.16), rgba(247, 243, 238, 0.16)),
+    url("../assets/artist/dennis-hairdetail.jpeg");
+  background-position: -40% 15%;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-color: rgba(174, 164, 140, 100);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(247, 243, 238, 0.05), rgba(247, 243, 238, 0.062));
+}
+
+.hero-copy {
+  position: relative;
+  max-width: 56rem;
+  margin: 0;
+  padding: 3rem 2rem;
+  background: var(--surface-glass);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(20px);
+  transition:
+    background 4s ease,
+    border-color 4s ease,
+    box-shadow 4s ease,
+    backdrop-filter 4s ease;
+}
+
+/* Hero-specific heading */
+.hero-copy h1 {
+  margin: 0 0 1rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 5vw, 5.2rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+
+/* Shared heading styles across sections */
+.about-copy h2,
+.section-head h2,
+.experience h2,
+.booking h2,
+.final-cta h2,
+.brand-intro-copy h2 {
+  margin: 0 0 1.2rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.4rem, 3vw, 3.5rem);
+  line-height: 1.02;
+}
+
+/* Uppercase labels across sections */
+.hero-copy .eyebrow,
+.section-label,
+.footer-info-label,
+.footer-brand,
+.overlay-title {
+  text-transform: uppercase;
+}
+
+/* Hero eyebrow/label styling */
+.hero-copy .eyebrow,
+.section-label {
+  margin: 0 0 1rem;
+  letter-spacing: 0.25em;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+/* Hero intro text */
+.hero-copy .intro {
+  margin: 0 2rem 2rem 0;
+  max-width: 42rem;
+  font-size: 1.05rem;
+  color: var(--text-soft);
+}
+
+/* Hero action buttons */
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+</style>

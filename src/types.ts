@@ -8,7 +8,6 @@ export interface SectionProps {
   id?: string;
 }
 
-
 export const SectionTypes = {
   header: 'section-header',
   hero: 'section-hero',

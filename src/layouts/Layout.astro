@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css' ;
+import BookingComponent from '../components/BookingComponent.astro';
+import { projectVars } from '../project';
 ---
 
 
@@ -11,9 +13,15 @@ import '../styles/global.css' ;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>TheSchneiderHair</title>
+		<title>{projectVars.projectName}</title>
+		<script defer src="script.js"></script>
+		
 	</head>
+	
 	<body class="page-container">
 		<slot />
 	</body>
+	
+    <BookingComponent/>
+	
 </html>

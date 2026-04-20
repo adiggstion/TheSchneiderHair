@@ -10,16 +10,13 @@ const {
 } = Astro.props as SectionProps;
 
 const SectionClass =  CustomStyle || SectionType;
-
-
 ---
 
-<section
-  id={id}
-  class={`w-full ${SectionClass} ${CustomStyle}`.trim()}
-  style={minHeight ? `min-height: ${minHeight};` : undefined}
->
-  <div class="w-full">
-    <slot />
-  </div>
-</section>
+<section  id={id}  class={`w-full ${SectionClass} ${CustomStyle}`.trim()}
+  style={minHeight ? `min-height: ${minHeight};` : undefined}>
+      <slot />
+  </section>
+
+
+
+

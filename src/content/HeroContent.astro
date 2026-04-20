@@ -1,27 +1,37 @@
+---
+import { Button } from "@/components/ui/button"
+
+---
 
 
-<section class="hero" id="top">
 
+<div class="hero" id="top">
   <div class="hero-overlay"></div>
   <div class="hero-copy" data-reveal>
     <p class="eyebrow" data-i18n="heroEyebrow">Blonde specialist · Berlin Friedrichshain</p>
     <h1 data-i18n="heroHeadline">Berlin Blonde, Done Right.</h1>
     <p class="intro" data-i18n="heroIntro">Soft. Seamless. Healthy. High-end blonding & balayage by Dennis Schneider.</p>
     <div class="hero-actions">
-      <a class="button button-primary booking-trigger" href="https://theschneiderhair.salonized.com/" target="_blank" rel="noopener" data-i18n="heroButtonBook">Book Appointment</a>
-      <a class="button button-secondary" href="https://www.amazon.de/shop/theschneider.hair?ref_=cm_sw_r_apin_aipsfshop_1XKG4HECKB20E70B9HQ3&language=en-US" target="_blank" rel="noopener">Recommended Products</a>
-      <a class="button button-secondary" href="https://payhip.com/theschneiderhair" target="_blank" rel="noopener">Purchase E-Book</a>
-      <a class="button button-secondary" href="#portfolio" data-i18n="heroButtonPortfolio">Portfolio</a>
+<Button id="book-btn" class="booking-trigger" variant="outline">
+  Book Appointment
+</Button>
+      <Button variant="link"><a href="https://www.amazon.de/shop/theschneider.hair?ref_=cm_sw_r_apin_aipsfshop_1XKG4HECKB20E70B9HQ3&language=en-US" target="_blank" rel="noopener">Recommended Products</a></Button>
+      <Button variant="link"><a href="https://payhip.com/theschneiderhair" target="_blank" rel="noopener">Purchase E-Book</a></Button>
+      <Button variant="link"><a href="#portfolio" data-i18n="heroButtonPortfolio">Portfolio</a></Button>
     </div>
   </div>
-</section>
+  
+</div>
+
+
+
 
 
 <style>
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 80dvh;
   display: grid;
   align-items: center;
   justify-items: start;
@@ -30,8 +40,8 @@
   background:
     linear-gradient(180deg, rgba(247, 243, 238, 0.16), rgba(247, 243, 238, 0.16)),
     url("../assets/artist/dennis-hairdetail.jpeg");
-  background-position: -40% 15%;
-  background-size: 120%;
+  background-position: right 15%;
+  background-size: 80%;
   background-repeat: no-repeat;
   background-color: rgba(174, 164, 140, 100);
 }
@@ -39,22 +49,31 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(247, 243, 238, 0.05), rgba(247, 243, 238, 0.062));
+  background: linear-gradient(180deg, rgba(146, 148, 146, 0.541), rgba(238, 247, 240, 0.062));
 }
 
 .hero-copy {
   position: relative;
-  max-width: 56rem;
+  max-width: 50rem;
   margin: 0;
   padding: 3rem 2rem;
   background: var(--surface-glass);
-  border: 1px solid var(--border);
+  border: 0px solid var(--border);
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   transition:
-    background 4s ease,
-    border-color 4s ease,
-    box-shadow 4s ease,
-    backdrop-filter 4s ease;
+    background 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    backdrop-filter 0.35s ease,
+    -webkit-backdrop-filter 0.35s ease;
+}
+
+/* desktop mouse hold + mobile press hold */
+.hero-copy:active {
+  background: transparent;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
 }
 
 /* Hero-specific heading */
@@ -112,5 +131,125 @@
   flex-wrap: wrap;
   gap: 1rem;
 }
+
+
+  /* your existing styles */
+ /* your existing styles */ /* your existing styles */ /* your existing styles */ /* your existing styles */
+
+
+    .hero-copy::before {
+      content: "";
+      position: absolute;
+      inset: 38% 38%;
+      border: 1px solid var(--border);
+      pointer-events: none;
+      animation: heroCopyBorderExpand 1s ease-out forwards;
+    }
+  
+
+  @keyframes heroCopyFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes heroCopyBorderExpand {
+    from {
+      
+      opacity: 0;
+    }
+    to {
+      inset: 0;
+      opacity: 1;
+      border-color: #B2A993;
+    }
+  }
+
+
+
+ /* your existing styles */ /* your existing styles */ /* your existing styles */
+
+
+
+
+
+
+
+
+@media (max-width: 720px) {
+  .hero {
+    position: relative;
+    min-height: 100dvh;
+    padding: 0;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    border-color: transparent;
+  }
+
+  .hero-overlay {
+    inset: 0;
+    padding: 0;
+     top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0; 
+  }
+
+  .hero-copy {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    min-height: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 1.25rem 1.5rem 2rem;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.8rem, 13vw, 4.5rem);
+    line-height: 0.95;
+    max-width: 8ch;
+  }
+
+  .hero-copy .intro {
+    margin: 0 0 1.5rem 0;
+    max-width: 18rem;
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.9rem;
+  }
+}
+
+@keyframes heroCopyMobileFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 
 </style>

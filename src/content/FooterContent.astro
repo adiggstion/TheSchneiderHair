@@ -1,7 +1,132 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-meta">
+      <p class="footer-brand">theschneider.hair</p>
 
+      <p>
+        <span data-i18n="footerInstagram">Instagram</span>
+        <a href="https://instagram.com/theschneider.hair" target="_blank" rel="noopener">
+          @theschneider.hair
+        </a>
+      </p>
+
+      <p>theschneiderhair@gmail.com · +49 173 6835329</p>
+
+      <div class="footer-hours-contact">
+        <p class="footer-info-label">Business hours</p>
+        <p>Tue–Fri 10:00–18:00 · Sat 10:00–16:00 · Mon/Sun closed</p>
+
+        <p class="footer-info-label">Contact</p>
+        <p>Gärtnerstraße 31 (SALON 31) · 10245 Berlin</p>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <a href="https://www.amazon.de/shop/theschneider.hair?ref_=cm_sw_r_apin_aipsfshop_1XKG4HECKB20E70B9HQ3&language=en-US" target="_blank" rel="noopener" data-i18n="footerAmazon">
+        Amazon storefront
+      </a>
+
+      <a href="https://payhip.com/theschneiderhair" target="_blank" rel="noopener" data-i18n="footerEbook">
+        Bleach eBook
+      </a>
+
+      <a href="https://www.eventim-light.com/de/a/66c5d1b85f95d22f84e14f2b" target="_blank" rel="noopener" data-i18n="footerEducation">
+        Education & tickets
+      </a>
+
+      <a href="https://form.jotform.com/260362881570055" target="_blank" rel="noopener" data-i18n="footerAGB">
+        AGB
+      </a>
+
+      <a href="https://form.jotform.com/260363883078061" target="_blank" rel="noopener" data-i18n="footerImpressum">
+        Impressum
+      </a>
+    </div>
+  </div>
+</footer>
 
 <style>
-  .salonized-booking {
-    display: block;
+  .site-footer {
+    padding: 4rem 1.5rem;
+  }
+
+  /* 👇 this is the “white border glass card” */
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    background: var(--surface-glass);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+  }
+
+  .footer-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .footer-brand {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.04em;
+  }
+
+  .footer-meta a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+  }
+
+  .footer-meta a:hover {
+    border-color: currentColor;
+  }
+
+  .footer-hours-contact {
+    margin-top: 1rem;
+  }
+
+  .footer-info-label {
+    margin-top: 0.75rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: flex-start;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+  }
+
+  .footer-links a:hover {
+    border-color: currentColor;
+  }
+
+  @media (max-width: 900px) {
+    .footer-inner {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .site-footer {
+      padding: 2.5rem 1rem;
+    }
   }
 </style>

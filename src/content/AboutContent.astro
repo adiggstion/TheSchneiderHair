@@ -1,1 +1,138 @@
-<div class="">About</div>
+---
+import dennisPortrait from '../assets/artist/dennis-studio.jpeg';
+---
+
+<div class="about" id="about">
+
+  <div class="about-image" data-reveal>
+    <img src={dennisPortrait.src} alt="Portrait of Dennis Schneider" />
+  </div>
+<br>
+  <div class="about-copy" data-reveal>
+    <p class="about-label" data-i18n="aboutLabel">Mastery in Blonde</p>
+
+    <h2 data-i18n="aboutHeadline">Blonde is not a color. It’s precision.</h2>
+
+    <p>
+      Hi, I'm Dennis – a self-employed master hairdresser and blonde specialist in Berlin Friedrichshain. For over 16 years, I've specialized in bleaching, balayage, lived-in looks, and natural, multidimensional hair color. If you're looking for a blonde expert in Berlin who combines high-quality results with healthy hair, you've come to the right place.
+    </p>
+<br>
+    <p>
+      My focus is on modern techniques that allow for smooth transitions, clear blonde tones, and perfect nuances – all without compromising hair quality. Every color treatment is individually tailored to your hair type, your daily routine, and your long-term hair structure. I work with professional brands such as Olaplex, Evo Hair, Danger Jones and other high-performance products to guarantee you long-lasting, healthy and vibrant color results. Whether it's bleaching, balayage, root coloring, glossing or a complete color transformation: my goal is for you to leave my chair with a look that suits you – modern, individual and effortless.
+    </p>
+<br>
+    <p data-i18n="aboutCopy">
+      Dennis Schneider is a Berlin-based master hairstylist and blonde specialist. From Friedrichshain, he builds natural, multi-dimensional blondes with a calm, considered approach.
+    </p>
+
+    <ul data-i18n-list="aboutList">
+      <li>16+ years shaping blondes and lived-in color.</li>
+      <li>Every result is tailored to hair type, lifestyle, and long-term health.</li>
+      <li>No one-size-fits-all coloring. Only subtle luxury and clean transitions.</li>
+    </ul>
+  </div>
+
+
+</div>
+
+<style>
+  .about-label  {
+    margin: 0 0 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    color: var(--muted, rgba(255, 255, 255, 0.7));
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    align-items: start; /* 👈 prevents weird vertical centering with 100vh */
+    padding: 4rem 1.5rem;
+  }
+
+  .about-copy {
+    max-width: 42rem;
+  }
+
+  .about-copy h2 {
+    margin: 0 0 1.2rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.4rem, 3vw, 3.5rem);
+    line-height: 1.02;
+  }
+
+  .about-copy ul {
+    margin: 1.5rem 0 0;
+    padding-left: 1.2rem;
+    color: var(--text-soft);
+    list-style: disc;
+  }
+
+.about-copy li::marker {
+  color: var(--border);
+}
+
+  .about-copy li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+  }
+
+  .about-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: 1px solid var(--border);
+    height: 100vh; /* 👈 full browser height */
+  }
+
+.about-copy p {
+  text-align: justify;
+  hyphens: auto;
+}
+
+  .about-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 900px) {
+    .about {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 3rem 1rem;
+    }
+
+    .about-copy {
+      max-width: none;
+    }
+
+    .about-image {
+      height: 60vh; /* 👈 more reasonable on tablets */
+    }
+  }
+
+  @media (max-width: 640px) {
+    .about-copy h2 {
+      font-size: clamp(2rem, 6vw, 2.6rem);
+    }
+
+    .about-image {
+      border-radius: 0.75rem;
+      height: 50vh; /* 👈 avoids huge image on small screens */
+    }
+
+
+.about-copy {
+  background: var(--surface-glass);
+  padding: 2rem;
+  border: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+   border-radius: 1rem;
+}
+
+  }
+</style>

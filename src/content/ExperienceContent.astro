@@ -1,1 +1,130 @@
-<div>Experience</div>
+---
+import experienceImage from '../assets/images/experience-section.jpeg';
+---
+
+<div class="experience" id="experience">
+  <div class="experience-copy" data-reveal>
+    <p class="experience-label" data-i18n="experienceLabel">The experience</p>
+
+    <h2 data-i18n="experienceHeadline">More than a salon visit.</h2>
+
+    <p data-i18n="experienceCopy">
+      From the moment you arrive, the focus is on calm, curated hair work. Every session is precise, unhurried, and designed to keep your blonde healthy for months.
+    </p>
+
+    <ul data-i18n-list="experienceList">
+      <li>Private, intentional environment</li>
+      <li>Precision work with soft, natural transitions</li>
+      <li>Long-term hair health and low-maintenance luxury</li>
+    </ul>
+  </div>
+
+  <div class="experience-image" data-reveal>
+    <img src={experienceImage.src} alt="" />
+  </div>
+</div>
+
+<style>
+  .experience-label {
+    margin: 0 0 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    color: var(--muted, rgba(255, 255, 255, 0.7));
+  }
+
+  .experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: stretch;
+    padding: 4rem 1.5rem;
+  }
+
+  .experience-copy {
+    width: 100%;
+  }
+
+  .experience-copy h2 {
+    margin: 0 0 1.2rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.4rem, 3vw, 3.5rem);
+    line-height: 1.02;
+  }
+
+  .experience-copy ul {
+    margin: 1.5rem 0 0;
+    padding-left: 1.2rem;
+    color: var(--text-soft);
+    list-style: disc;
+  }
+
+  .experience-copy li::marker {
+    color: var(--border);
+  }
+
+  .experience-copy li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+  }
+
+  .experience-image {
+    height: 100%;
+    align-self: stretch;
+    display: flex;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: 1px solid var(--border);
+  }
+
+  .experience-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+  }
+
+  @media (max-width: 900px) {
+    .experience {
+      grid-template-columns: 1fr;
+      gap: 0;
+      padding: 3rem 1rem;
+    }
+
+    .experience-image {
+      order: 1;
+      height: 320px;
+      margin-bottom: 2rem;
+      border-radius: 0.75rem;
+      margin-bottom: 6rem;
+    }
+
+    .experience-copy {
+      order: 2;
+      max-width: none;
+      width: 100%;
+      background: var(--surface-glass);
+      padding: 2rem;
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      backdrop-filter: blur(10px);
+      box-sizing: border-box;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .experience-copy h2 {
+      font-size: clamp(2rem, 6vw, 2.6rem);
+    }
+
+    .experience-image {
+      order: 1;
+      height: 320px;
+      margin-bottom: 2rem;
+      border-radius: 0.75rem;
+      margin-bottom: 6rem;
+    }
+  }
+</style>

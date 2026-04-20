@@ -12,18 +12,26 @@ import {
   LocationLayout,
   FooterLayout
 } from '../types';
-
+import BookingComponent from '../components/BookingComponent.astro';
 import {SectionTypes} from '../types';
 ---
 
 <Layout>
 	<HeaderLayout 		HeightRatio=0.01 SectionType= {SectionTypes.header} 		/>
 	<HeroLayout 		HeightRatio=0.1 SectionType= {SectionTypes.hero}			/>
-	<AuthorityLayout 	HeightRatio=0.1 SectionType= {SectionTypes.authority}		/>
+
+    	<ServicesLayout 	HeightRatio=0.1 SectionType= {SectionTypes.services}		/>
+	
+
+  <ExperienceLayout 	HeightRatio=0.1 SectionType= {SectionTypes.experience}	/>
 	<AboutLayout 		HeightRatio=0.1 SectionType= {SectionTypes.about}			/>
-	<ServicesLayout 	HeightRatio=0.1 SectionType= {SectionTypes.services}		/>
+
 	<GalleryLayout 		HeightRatio=0.1 SectionType= {SectionTypes.gallery}		/>
-	<ExperienceLayout 	HeightRatio=0.1 SectionType= {SectionTypes.experience}	/>
+	<AuthorityLayout 	HeightRatio=0.1 SectionType= {SectionTypes.authority}		/>
 	<LocationLayout 	HeightRatio=0.1 SectionType= {SectionTypes.location}		/>
 	<FooterLayout 		HeightRatio=0.1 SectionType= {SectionTypes.footer}		/>
+  <BookingComponent/>
 </Layout>
+
+
+

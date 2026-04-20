@@ -1,1 +1,181 @@
-<div>Services</div>
+---
+import services from '../data/services.json';
+import ServicesAccordion, {
+  type ServiceData,
+} from '../components/ServicesAccordion';
+
+/* ---------- DATA ---------- */
+
+const serviceData = services as ServiceData;
+const lang: 'en' | 'de' = 'en';
+const categories = serviceData[lang] ?? serviceData.en;
+---
+
+<section class="services" id="services">
+  <div class="section-head" data-reveal>
+    <p class="section-label">Premium Services</p>
+    <h2>Blonde packages, gloss, and hair health rituals.</h2>
+    <p class="services-copy">
+      A curated selection of specialist blonding, colour and treatment rituals
+      designed for effortless luxury and long-lasting results.
+    </p>
+  </div>
+
+  <div class="services-accordion-wrap" data-reveal>
+    <ServicesAccordion client:load categories={categories} />
+  </div>
+</section>
+
+<style>
+  .services {
+    padding: 4rem 1.5rem;
+  }
+
+  .section-head {
+    max-width: 48rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-label {
+    margin: 0 0 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    color: var(--muted, rgba(255, 255, 255, 0.7));
+  }
+
+  .section-head h2 {
+    margin: 0 0 1rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.4rem, 3vw, 4rem);
+    line-height: 0.98;
+  }
+
+  .services-copy {
+    max-width: 42rem;
+    color: var(--text-soft);
+    line-height: 1.7;
+  }
+
+  /* ---------- ACCORDION STYLES (GLOBAL TARGET) ---------- */
+
+  .services-accordion-wrap :global(.services-list) {
+    display: grid;
+    gap: 1px;
+  }
+
+  .services-accordion-wrap :global(.service-accordion) {
+    background: #b2a993;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+  }
+
+  .services-accordion-wrap :global(.service-trigger) {
+    width: 100%;
+    padding: 0.85rem 1.25rem !important;
+    background: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+  }
+
+  .services-accordion-wrap :global(.service-trigger-copy) {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .services-accordion-wrap :global(.service-category) {
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  .services-accordion-wrap :global(.service-count) {
+    color: #7c6b58;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-right: 1rem;
+  }
+
+  .services-accordion-wrap :global(.service-panel) {
+    padding: 0 1.6rem 1.4rem;
+  }
+
+  .services-accordion-wrap :global(.service-item) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem 2rem;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .services-accordion-wrap :global(.service-item-copy h3) {
+    margin: 0 0 0.35rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .services-accordion-wrap :global(.service-item-copy p) {
+    margin: 0;
+    color: var(--text-soft);
+    line-height: 1.6;
+  }
+
+  .services-accordion-wrap :global(.service-item-meta) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.35rem;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+
+  .services-accordion-wrap :global(.price) {
+    font-weight: 700;
+  }
+
+  /* ---------- RESPONSIVE ---------- */
+
+  @media (max-width: 900px) {
+    .services {
+      padding: 3rem 1rem;
+    }
+
+    .section-head h2 {
+      font-size: clamp(2rem, 6vw, 3rem);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .section-head {
+      max-width: none;
+      width: 100%;
+      background: var(--surface-glass);
+      padding: 2rem;
+      border-radius: 1rem;
+      border: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+      box-sizing: border-box;
+    }
+
+    .services-accordion-wrap :global(.service-trigger-copy) {
+      gap: 0.75rem;
+    }
+
+    .services-accordion-wrap :global(.service-count) {
+      margin-right: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .services-accordion-wrap :global(.service-item) {
+      grid-template-columns: 1fr;
+    }
+
+    .services-accordion-wrap :global(.service-item-meta) {
+      align-items: flex-start;
+    }
+  }
+</style>

@@ -8,12 +8,15 @@
 /* ===== SOURCE OF TRUTH ===== */
 :root {
   /* Raw palette */
+
+ 
+
   --beige-50:  #f6f3ec;
   --beige-100: #ece5d3;
   --beige-200: #d8ceb4;
   --beige-300: #bfb69f;
-  --beige-400: #a29b87;
-  --beige-500: #857e6e;
+  --beige-400:   #B2A993;
+  --beige-500:   #857e6e;
   --beige-600: #686356;
   --beige-700: #4f4b41;
   --beige-800: #35322b;
@@ -91,7 +94,7 @@
 }
 
 .page-container {
-  @apply bg-transparent;
+  @apply bg-beige-400;
 }
 
 /* ===== SECTION TYPES ===== */
@@ -186,6 +189,10 @@
   padding: 1rem 2rem;
 }
 
+
+
+/* CSS added during Schadcn initialization */
+
 @theme inline {
   --font-heading:  var(--font-sans);
   --font-sans:  'Figtree Variable', sans-serif;
@@ -272,5 +279,24 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+
+
+/* Testing Grounds */
+
+
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 4s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

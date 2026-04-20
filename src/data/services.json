@@ -1,0 +1,306 @@
+{
+  "en": [
+    {
+      "category": "Consultation",
+      "items": [
+        {
+          "title": "Style consultation",
+          "desc": "Are you unsure which look truly suits your style and lifestyle? We analyse your hair structure, wishes and possibilities in detail.",
+          "duration": "60 min",
+          "price": "€50.00"
+        },
+        {
+          "title": "Extensions consultation",
+          "desc": "We assess extensions method, quality, length and blend for your hair. Honest advice on maintenance, longevity and the best option for you.",
+          "duration": "60 min",
+          "price": "€50.00"
+        }
+      ]
+    },
+    {
+      "category": "Haircut & Blowdry",
+      "items": [
+        {
+          "title": "Haircut & Styling",
+          "desc": "Consultation, deep conditioning treatment, haircut & styling.",
+          "duration": "60 min",
+          "price": "€95.00"
+        },
+        {
+          "title": "Haircut & Styling (Long/Thick Hair)",
+          "desc": "Consultation, deep conditioning treatment, haircut & styling.",
+          "duration": "90 min",
+          "price": "€115.00"
+        },
+        {
+          "title": "Blowdry",
+          "desc": "Consultation, deep conditioning treatment, blowdry and/or waves.",
+          "duration": "60 min",
+          "price": "€60.00"
+        },
+        {
+          "title": "Blowdry (Long/Thick Hair)",
+          "desc": "Consultation, deep conditioning treatment, blowdry and/or waves.",
+          "duration": "90 min",
+          "price": "€80.00"
+        }
+      ]
+    },
+    {
+      "category": "Color",
+      "items": [
+        {
+          "title": "Color Package - S",
+          "desc": "Consultation, root color, deep conditioning treatment, haircut & styling. Ideal for covering grey roots or refreshing the root color.",
+          "duration": "120 min",
+          "price": "€190.00"
+        },
+        {
+          "title": "Color Package - M",
+          "desc": "Consultation, root color, deep conditioning treatment, haircut & styling. Ideal for root refresh and color balance through the lengths.",
+          "duration": "180 min",
+          "price": "€210.00"
+        }
+      ]
+    },
+    {
+      "category": "Blonde",
+      "items": [
+        {
+          "title": "Blonde Package - S",
+          "desc": "Consultation, highlights/balayage, gloss, Olaplex, deep conditioning, haircut and styling. Ideal for refreshing the blonde at the parting and hairline.",
+          "duration": "180 min",
+          "price": "€240.00"
+        },
+        {
+          "title": "Blonde Package - M",
+          "desc": "Consultation, highlights/balayage, gloss, Olaplex, deep conditioning, haircut and styling. Ideal for refreshing blonde all over.",
+          "duration": "240 min",
+          "price": "€320.00"
+        },
+        {
+          "title": "Blonde Package - L",
+          "desc": "Consultation, highlights/balayage, gloss, Olaplex, deep conditioning, haircut and styling. Ideal for a complete new look or color correction.",
+          "duration": "300 min",
+          "price": "€430.00"
+        }
+      ]
+    },
+    {
+      "category": "Gloss",
+      "items": [
+        {
+          "title": "Gloss Package - S",
+          "desc": "Consultation, gloss, deep conditioning, haircut and styling. Ideal for refreshing blonde tone. Highlights not included.",
+          "duration": "120 min",
+          "price": "€170.00"
+        },
+        {
+          "title": "Gloss Package - M",
+          "desc": "Consultation, gloss, deep conditioning, haircut and styling. Ideal for refreshing tone and blending regrowth.",
+          "duration": "150 min",
+          "price": "€200.00"
+        }
+      ]
+    },
+    {
+      "category": "Treatments / Add-ons",
+      "items": [
+        {
+          "title": "OLAPLEX Express Treatment",
+          "desc": "A quick strengthening treatment to refresh hair health.",
+          "duration": "10 min",
+          "price": "€25.00"
+        },
+        {
+          "title": "OLAPLEX Rebuild Treatment",
+          "desc": "Intensive rebuilding treatment to restore structure and shine.",
+          "duration": "45 min",
+          "price": "€65.00"
+        },
+        {
+          "title": "Deep Hydration Treatment",
+          "desc": "A moisture-rich ritual for soft, silky hair.",
+          "duration": "15 min",
+          "price": "€35.00"
+        },
+        {
+          "title": "SOS Repair Treatment",
+          "desc": "Targeted repair for fragile, damaged lengths.",
+          "duration": "15 min",
+          "price": "€35.00"
+        },
+        {
+          "title": "Weft Maintenance - 1 Row",
+          "desc": "Precision maintenance for one row of hair extensions.",
+          "duration": "90 min",
+          "price": "€150.00"
+        },
+        {
+          "title": "Weft Maintenance - 2 Rows",
+          "desc": "Precision maintenance for two rows of extensions.",
+          "duration": "150 min",
+          "price": "€250.00"
+        },
+        {
+          "title": "Weft Maintenance - 3 Rows",
+          "desc": "Precision maintenance for three rows of extensions.",
+          "duration": "210 min",
+          "price": "€350.00"
+        }
+      ]
+    }
+  ],
+  "de": [
+    {
+      "category": "Beratung",
+      "items": [
+        {
+          "title": "Style-Beratung",
+          "desc": "Unsicher, welcher Look zu deinem Stil und Lebensstil passt? Wir analysieren Haare, Wünsche und Möglichkeiten genau.",
+          "duration": "60 min",
+          "price": "€50.00"
+        },
+        {
+          "title": "Extensions-Beratung",
+          "desc": "Wir bewerten Methode, Qualität, Länge und Harmonie der Extensions zu deinem Haar. Ehrliche Einschätzung zu Pflege und Haltbarkeit.",
+          "duration": "60 min",
+          "price": "€50.00"
+        }
+      ]
+    },
+    {
+      "category": "Haarschnitt & Blowdry",
+      "items": [
+        {
+          "title": "Haircut & Styling",
+          "desc": "Beratung, Tiefenpflege, Haarschnitt & Styling.",
+          "duration": "60 min",
+          "price": "€95.00"
+        },
+        {
+          "title": "Haircut & Styling (Langes/dickes Haar)",
+          "desc": "Beratung, Tiefenpflege, Haarschnitt & Styling.",
+          "duration": "90 min",
+          "price": "€115.00"
+        },
+        {
+          "title": "Blowdry",
+          "desc": "Beratung, Tiefenpflege, Blowdry und/oder Wellen.",
+          "duration": "60 min",
+          "price": "€60.00"
+        },
+        {
+          "title": "Blowdry (Langes/dickes Haar)",
+          "desc": "Beratung, Tiefenpflege, Blowdry und/oder Wellen.",
+          "duration": "90 min",
+          "price": "€80.00"
+        }
+      ]
+    },
+    {
+      "category": "Color",
+      "items": [
+        {
+          "title": "Color Package - S",
+          "desc": "Beratung, Ansatzfarbe, Tiefenpflege, Haarschnitt & Styling. Ideal für graue Ansätze oder frischen Farbansatz.",
+          "duration": "120 min",
+          "price": "€190.00"
+        },
+        {
+          "title": "Color Package - M",
+          "desc": "Beratung, Ansatzfarbe, Tiefenpflege, Haarschnitt & Styling. Ideal für Auffrischung der Ansätze und Längen.",
+          "duration": "180 min",
+          "price": "€210.00"
+        }
+      ]
+    },
+    {
+      "category": "Blonde",
+      "items": [
+        {
+          "title": "Blonde Package - S",
+          "desc": "Beratung, Highlights/Balayage, Gloss, Olaplex, Tiefenpflege, Haarschnitt & Styling. Ideal für die Auffrischung am Haaransatz.",
+          "duration": "180 min",
+          "price": "€240.00"
+        },
+        {
+          "title": "Blonde Package - M",
+          "desc": "Beratung, Highlights/Balayage, Gloss, Olaplex, Tiefenpflege, Haarschnitt & Styling. Ideal für eine vollständige Auffrischung.",
+          "duration": "240 min",
+          "price": "€320.00"
+        },
+        {
+          "title": "Blonde Package - L",
+          "desc": "Beratung, Highlights/Balayage, Gloss, Olaplex, Tiefenpflege, Haarschnitt & Styling. Ideal für Neukunden oder Farbkorrrekturen.",
+          "duration": "300 min",
+          "price": "€430.00"
+        }
+      ]
+    },
+    {
+      "category": "Gloss",
+      "items": [
+        {
+          "title": "Gloss Package - S",
+          "desc": "Beratung, Gloss, Tiefenpflege, Haarschnitt & Styling. Ideal zur Auffrischung des Blondtons.",
+          "duration": "120 min",
+          "price": "€170.00"
+        },
+        {
+          "title": "Gloss Package - M",
+          "desc": "Beratung, Gloss, Tiefenpflege, Haarschnitt & Styling. Ideal zum Auffrischen des Tons und zum Verblenden des Nachwuchses.",
+          "duration": "150 min",
+          "price": "€200.00"
+        }
+      ]
+    },
+    {
+      "category": "Behandlungen / Add-ons",
+      "items": [
+        {
+          "title": "OLAPLEX Express Behandlung",
+          "desc": "Kurze Stärkungskur, um das Haar sofort zu revitalisieren.",
+          "duration": "10 min",
+          "price": "€25.00"
+        },
+        {
+          "title": "OLAPLEX Rebuild Behandlung",
+          "desc": "Intensive Kur zur Wiederherstellung von Struktur und Glanz.",
+          "duration": "45 min",
+          "price": "€65.00"
+        },
+        {
+          "title": "Deep Hydration Behandlung",
+          "desc": "Feuchtigkeitsreiche Pflege für weiches, geschmeidiges Haar.",
+          "duration": "15 min",
+          "price": "€35.00"
+        },
+        {
+          "title": "SOS Repair Behandlung",
+          "desc": "Gezielte Reparatur für brüchige, geschädigte Längen.",
+          "duration": "15 min",
+          "price": "€35.00"
+        },
+        {
+          "title": "Weft Maintenance - 1 Row",
+          "desc": "Präzise Pflege für eine Reihe Haarverlängerungen.",
+          "duration": "90 min",
+          "price": "€150.00"
+        },
+        {
+          "title": "Weft Maintenance - 2 Rows",
+          "desc": "Präzise Pflege für zwei Reihen Extensions.",
+          "duration": "150 min",
+          "price": "€250.00"
+        },
+        {
+          "title": "Weft Maintenance - 3 Rows",
+          "desc": "Präzise Pflege für drei Reihen Extensions.",
+          "duration": "210 min",
+          "price": "€350.00"
+        }
+      ]
+    }
+  ]
+}

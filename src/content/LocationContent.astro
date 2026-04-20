@@ -1,1 +1,109 @@
-<div>Location</div>
+<div class="location" id="location" data-reveal>
+  <div class="location-copy">
+    <p class="location-label" data-i18n="locationLabel">Location</p>
+    <h2 data-i18n="locationHeadline">Berlin Friedrichshain</h2>
+    <p data-i18n="locationCopy">
+      Gärtnerstraße 31 · Salon 31 
+    </p>
+
+    <br><br>
+
+  <div class="map-wrapper">
+    <iframe
+      src="https://www.google.com/maps?q=G%C3%A4rtnerstra%C3%9Fe+31+10245+Berlin&hl=de&output=embed"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+
+  </div>
+
+
+</div>
+
+<style>
+  .location-label {
+    margin: 0 0 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    color: var(--muted, rgba(255, 255, 255, 0.7));
+  }
+
+  .location {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+    padding: 4rem 1.5rem;
+    align-items: center;
+  }
+
+  .location-copy {
+    max-width: 28rem;
+  }
+
+  .location-copy h2 {
+    margin: 0 0 1rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.2rem, 3vw, 3.2rem);
+    line-height: 1.05;
+  }
+
+  .map-wrapper {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  .map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+
+  @media (max-width: 900px) {
+    .location {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 3rem 1rem;
+    }
+
+    .location-copy {
+      max-width: none;
+      width: 100%;
+      background: var(--surface-glass);
+      padding: 2rem;
+      border-radius: 1rem;
+      border: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .map-wrapper {
+      height: 340px;
+      border-radius: 0.75rem;
+    }
+  }
+
+.location-copy {
+  max-width: 28rem;
+}
+
+@media (max-width: 900px) {
+  .location-copy {
+    max-width: none !important;
+    width: 100%;
+    justify-self: stretch;
+    box-sizing: border-box;
+
+    background: var(--surface-glass);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+  }
+</style>
